@@ -14,7 +14,7 @@ fetch('footer.html')
     })
 
 const aside = document.querySelector("#aside");
-fetch('/aside.html')
+fetch('aside.html')
     .then(res => res.text())
     .then(data => {
         aside.innerHTML = data;
