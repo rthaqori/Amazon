@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/Amazon_icon.png">
+
+    <title>Amazon UI Clone</title>
+    <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="cart.css">
+
+</head>
+<body>
+
+    <header id="navbar"></header>
+
+    <main>
+        <div class="container">
+
+            <div class="cart-container-div">
+                <div class="cart-container">
+                    <h1>Shopping Cart</h1>
+                    <a href="#" id="deselct-items">Deselct all items</a>
+                    <span>Price</span>
+                    <div class="cart-item-list">
+                        <!-- <div class="cart-item">
+                            <div class="checkbox">
+                                <input type="checkbox" name="" id="">
+                            </div>
+                            <div class="cart-item-image">
+                                <img src="assets/product_images/smartphones/samsung galexy S21.png" alt="samsung galexy s21">
+                            </div>
+                            <div class="cart-item-details">
+                                <div class="cart-item-info">
+                                    <h2><a href="#">Samsung Galaxy S21 5G, US Version, 256GB, Phantom Gray - Unlocked
+                                            (Renewed)</a>
+                                    </h2>
+                                    <span class="stock">In Stock</span>
+                                    <label for="gift">
+                                        <input type="checkbox" class="gift">
+                                        <span> This is a gift</span>
+                                        <a href="#" id="lern-more">Lern More</a>
+                                    </label>
+        
+                                    <span>
+                                        Color:
+                                        <span class="color">Cosmic Emerald</span>
+                                    </span>
+                                    <span>
+                                        Style:
+                                        <span class="style">Unlocked Smartphone</span>
+                                    </span>
+        
+                                    <div class="item-qty">
+                                        <span id="item-quentity">
+                                            Qty:
+                                            <select name="quentity" id="quentity">
+                                                <option value="0">0 (Delete)</option>
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10+</option>
+                                            </select>
+                                        </span>
+                                        <a href="#" id="delete">Delete</a>
+                                        <a href="#" id="save">Save for later</a>
+                                    </div>
+                                    <a href="#" id="compare">Compare with similar items</a>
+                                    <a href="#" id="share">Share</a>
+                                </div>
+        
+                                <div class="cart-item-price">
+                                    <span id="item-price">$799.99</span>
+                                </div>       
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="subtotal">
+                        <!-- <span>Subtotal
+                            (<span class="total-items">1 item</span>):
+                            <span class="total-price">$799.97</span>
+                        </span> -->
+                    </div>
+                </div>
+
+                <div class="items">
+                    <h2>Your Items</h2>
+                    <div id="saved-items">
+                        <a href="#">
+                            Saved items
+                        </a>
+                    </div>
+                    <div id="buy-again">
+                        <a href="#">
+                            Buy it again
+                        </a>
+                    </div>
+                    <div class="item-content">No items to buy again</div>
+                </div>
+
+                <span>The price and availability of items at Amazon.com are subject to change. The Cart is a temporary
+                    place to store a list of your items and reflects each item's most recent price.
+                    <a href="#" class="lern-more">Lern More</a>
+                </span>
+                <span>
+                    Do you have a gift card or promotional code? We'll ask you to enter your claim code when it's time
+                    to pay.
+                </span>
+            </div>
+
+            <div class="checkout-container">
+                <div class="subtotal-div">
+                    <div class="subtotal">
+                        <!-- <span>Subtotal
+                            (<span class="total-items">1 item</span>):
+                            <span class="total-price">$799.97</span>
+                        </span> -->
+                    </div>
+                    <label for="gift">
+                        <input type="checkbox" id="chechout-gift" class="gift">
+                        <span>This order contains a gift</span>
+                    </label>
+                    <button id="proceed-checkout">Proceed to checkout</button>
+                </div>
+                <div class="prime">
+                    <img src="" alt="prime_logo">
+                    <div>
+                        <span>Free fast delivery. No order minimum. Exclusive savings. Start your 30-day free trial of
+                            Prime.</span>
+                        <button id="join-prime">Join Prime</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="checkout.js"></script>
+
+</body>
+
+</html>

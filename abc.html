@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="cart-container-1">
+            <h1>Item 1</h1>
+            <button class="delete-item" data-product-id="1">delete</button>
+        </div>
+        <div class="cart-container-2">
+            <h1>Item 2</h1>
+            <button class="delete-item" data-product-id="2">delete</button>
+        </div>
+        <div class="cart-container-3">
+            <h1>Item 3</h1>
+            <button class="delete-item" data-product-id="3">delete</button>
+        </div>
+        <!-- Add more items as needed -->
+    </div>
+
+    <script>
+        let cart = [
+            { productId: 1, quantity: 2 },
+            { productId: 2, quantity: 1 },
+            { productId: 3, quantity: 3 },
+            // Add more items as needed
+        ];
+
+        function removeFromCart(productId) {
+            const cartIndex = cart.findIndex(item => item.productId == productId);
+            if (cartIndex > -1) {
+                cart.splice(cartIndex, 1);
+            }
+        }
+
+        function deleteItem() {
+            document.querySelectorAll(".delete-item").forEach((link) => {
+                link.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    const productId = link.dataset.productId;
+                    removeFromCart(productId);
+
+                    const miniCartContainer = document.querySelector(`.mini-cart-container-${productId}`);
+                    const mainCartContainer = document.querySelector(`.cart-container-${productId}`);
+                    if (miniCartContainer) miniCartContainer.remove();
+                    if (mainCartContainer) mainCartContainer.remove();
+                });
+            });
+        }
+
+        deleteItem();
+    </script>
+
+</body>
+</html>

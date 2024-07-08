@@ -1,0 +1,210 @@
+
+/* Main Start */
+
+h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+main {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+section.desktop-banner {
+    min-width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    transition: scroll 0.5s;
+    position: absolute;
+    z-index: -1;
+}
+
+.desktop-banner::-webkit-scrollbar {
+    display: none;
+  }
+
+.desktop-banner>a{
+    flex: 1 0 100%;
+    scroll-snap-align:start;
+}
+
+.desktop-banner a img {
+    width: 100%;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+.scroll-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.scroll-btn > button{
+    height: 250px;
+    width: 80px;
+    z-index: 9;
+    border-radius: 5px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+
+.left-btn{
+    transform: rotate(180deg);
+    left: 0;
+}
+.right-btn{
+    right: 0;
+}
+.left-btn:focus,
+.right-btn:focus{
+    border: 2px solid skyblue;
+    outline: 2px solid #fff;
+}
+
+.banner-nav{
+    display: none;
+}
+
+.layout{
+    width:  100%;
+    height: fit-content;
+    padding: 0 20px;
+}
+
+.card-layout{
+    width:  100%;
+    height: fit-content;
+    padding: 0 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.catagory-card{
+    height: 420px;
+    width: 24%;
+    padding: 20px 0 15px;
+    background: #FFF;
+}
+
+.catagory-card > * {
+    padding: 0 20px;
+}
+
+.catagory-card h1 {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.gaming-accessories{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2em;
+    padding: 0 20px;
+    overflow: hidden;
+    column-gap: 5px;
+}
+
+.gaming-accessories > a{
+    min-width: 48%;
+    max-width: 48%;
+    height: 20%;
+}
+
+.gaming-accessories a img{
+    width: 100%;
+    height: 115px;
+    object-fit: cover;
+}
+
+figcaption{
+    height: 36px;
+    color: #000;
+    font-size: 0.8em;
+}
+
+.more{
+    width: 100%;
+    font-size: 0.9em;
+    color: rgb(20, 189, 255);
+}
+
+
+.a-section,
+.b-section{
+    width: 100%;
+    padding: 10px 20px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.item-list-scroll{
+    height: 220px;
+}
+
+.item-list-scroll ul {
+    height: 100%;
+    display: flex;
+    column-gap: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.item-list-scroll ul::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+}
+
+.item-list-scroll ul::-webkit-scrollbar-track {
+    background: transparent; /* Track color */
+}
+
+.item-list-scroll ul::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Thumb color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+
+.item-list-scroll ul li {
+    height: 200px;
+    flex: 1 0 145px;
+    list-style: none;
+    overflow: visible;
+}
+
+.item-list-scroll ul li a img {
+    min-height: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: inherit;
+    object-fit: contain;
+}
+
+/* Main End */
+
+
+
+
+@media (max-width:1238px){
+    .catagory-card{
+        width: 32.25%;
+    }
+}
+
+@media (max-width:1024px){
+
+    .shopping-cart span{
+        display: none;
+    }
+}

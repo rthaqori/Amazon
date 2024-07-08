@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/Amazon_icon.png">
+
+    <title> Amazon sign-up</title>
+    <link rel="stylesheet" href="signin_signup.css">
+</head>
+
+<body>
+
+    <div class="container signup">
+        <div class="logo">
+            <img src="assets/amazon_logo_dark.png" height="30" alt="">
+        </div>
+        <form action="signin.php" method="post">
+            <h1>Create account</h1>
+
+            <label for="username">Your name</label>
+            <input type="text" id="username" name="username" placeholder="First and last name" required>
+            <span id="error">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 512">
+                    <path
+                        d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM32 480a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" />
+                </svg>
+                Enter your name
+            </span>
+
+            <label for="email">Mobile number or email</label>
+            <input type="text" id="email" name="email" required>
+            <span id="error">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 512">
+                    <path
+                        d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM32 480a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" />
+                </svg>
+                Enter your email or mobile phone number
+            </span>
+
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password" placeholder="At least 6 characters" required>
+            <span id="error">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 512">
+                    <path
+                        d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM32 480a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" />
+                </svg>
+                Minimum 6 characters required
+            </span>
+
+            <label for="conf_password">Re-enter password</label>
+            <input type="text" id="conf_password" name="conf_password" required>
+            <span id="error">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 512">
+                    <path
+                        d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM32 480a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" />
+                </svg>
+                Type your password again
+            </span>
+
+            <button type="submit" id="submit">Continue</button>
+
+            <div class="terms-conditions">
+                <span>By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy
+                        Notice</a>.</span>
+                <hr>
+                <h4>Buying for work?</h4>
+                <a href="#">Create a free business account</a>
+            </div>
+
+            <div class="li-gradient">
+                <span>Already have an account?
+                    <a href="signin.html">Sign in
+                        <img src="assets/dropdown_icon.png" height="7" alt="">
+                    </a>
+                </span>
+            </div>
+        </form>
+    </div>
+
+    <footer class="li-gradient">
+        <div>
+            <div class="footer-links">
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Help</a>
+            </div>
+            <span>© 1996-2024, Amazon.com, Inc. or its affiliates</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

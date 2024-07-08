@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/Amazon_icon.png">
+
+    <title>Amazon UI Clone</title>
+    <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="product_list.css">
+
+    
+</head>
+
+<body>
+
+    <header id="navbar"></header>
+
+    <aside id="aside">
+        <div class="top">
+            <h5>Subtotal</h5>
+            <div class="mini-cart-subtotal"></div>
+            <a href="cart.html">Go to cart</a>
+        </div>
+        <div class="bottom"></div>        
+    </aside>
+
+    <main>
+        <div class="small-top">
+            <div class="search_name">
+                <p>
+                    <span>69</span>
+                    results for
+                    <span>"samsung galexy s21"</span>
+                </p>
+            </div>
+            <div class="sort">
+                <span>Sort by:</span>
+                <select name="sort_by" id="sort-by">
+                    <option value="Featured" selected>Featured</option>
+                    <option value="low_to_high">Price: Low to High</option>
+                    <option value="high_to_low">Price: High to Low</option>
+                    <option value="customer_review">Avg: Customer Review</option>
+                    <option value="newest">Newestt Arrivals</option>
+                    <option value="">Best Seller</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products">
+            <div class="product-features"></div>
+            <div class="product-item-lists js-product-list">
+                <!-- <div class="item">
+                    <div class="product-image">
+                        <img src="assets/product_images/smartphones/samsung galexy S21.png" alt="samsung galexy s21">
+                    </div>
+                    <div class="item-details">
+                        <h2><a href="#">Samsung Galaxy S21 5G, US Version, 256GB, Phantom Gray - Unlocked (Renewed)</a>
+                        </h2>
+                        <div class="rating">
+                            <a href="#">
+                                <img src="assets/rating_img.png" alt="">
+                                <span id="total-ratings">69</span>
+                            </a>
+                        </div>
+                        <span class="stock-history">400+ bought in past month</span>
+                        <div class="price">
+                            <a href="#">
+                                <div class="after-discount">
+                                    <span>$</span>
+                                    <span id="item-price-dollar">799</span>
+                                    <span id="item-price-cents">99</span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="before-discount">
+                                    <span>New Price</span>
+                                    <span><s>$999.99</s></span>
+                                </div>
+                            </a>
+                        </div>
+                        <span id="stock-detail">Only 2 left in stock - order soon.</span>
+                        <button class="add-to-cart">Add to cart</button>
+                        <span class="more-choices">More Buying Choices</span>
+                        <div class="radio-buttons">
+                            <input type="radio" name="radio" id="black" checked>
+                            <label for="black"></label>
+                            <input type="radio" name="radio" id="white">
+                            <label for="white"></label>
+                            <input type="radio" name="radio" id="tomato">
+                            <label for="tomato"></label>
+                            <input type="radio" name="radio" id="skyblue">
+                            <label for="skyblue"></label>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="product_details.js"></script>
+    <script type="module" src="miniCart.js"></script>
+
+</body>
+
+</html>

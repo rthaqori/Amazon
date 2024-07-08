@@ -1,0 +1,248 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+}
+
+body {
+    background: #fff;
+    min-width: fit-content;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.container,
+form,
+.terms-conditions {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    min-width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.signin form {
+    width: 350px;
+    height: auto;
+    padding: 15px 26px;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.signup form {
+    width: 350px;
+    height: auto;
+    padding: 14px 18px;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+form>h1 {
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+
+form>label {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+input {
+    height: 30px;
+    padding: 3px 7px;
+    border: 1px solid #939393;
+    border-radius: 3px;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 0 0 5px 2px skyblue;
+}
+
+
+button {
+    height: 30px;
+    padding: 1px 6px;
+    border: none;
+    background-color: rgb(255, 217, 0);
+    font-size: 0.9em;
+    font-weight: 400;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(231, 217, 88);
+}
+
+.terms-conditions>hr {
+    border-width: 1px;
+    border-color: #ffffff;
+}
+
+span,
+a {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+a {
+    color: rgb(8, 124, 170);
+    font-weight: 400;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(255, 109, 109);
+}
+
+span:first-child {
+    margin: 10px 0 20px;
+}
+
+span:has(img) {
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.li-gradient>span a img,
+span:has(img)>img {
+    transform: rotate(-90deg);
+}
+
+
+h4 {
+    font-size: 13px;
+    margin: 15px 0 5px;
+}
+
+
+fieldset {
+    width: 350px;
+    padding: 10px 0;
+    border-color: #ccc transparent transparent transparent;
+    margin-top: 22px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+legend {
+    font-size: 12px;
+    color: #9e9e9e;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.sign-up {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.sign-up:hover {
+    background-color: #eaeaea;
+}
+
+.sign-up>a {
+    color: black;
+    font-weight: 400;
+}
+
+.sign-up>a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 22px;
+}
+
+.li-gradient{
+    position: relative;
+    border-left: transparent;
+    border-right: solid transparent;
+    border-bottom: solid transparent;
+}
+
+.li-gradient::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #ccc, rgba(0, 0, 0, 0));
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+footer span,
+.footer-links a {
+    font-size: 0.75em;
+}
+
+
+form>span{
+    font-size: 0.75em;
+    display: flex;
+    column-gap: 0.25em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+form>span>img{
+    aspect-ratio: 1;
+    width: 20px;
+    transform: rotate(-4deg);
+}
+
+.signup form .li-gradient{
+    margin-top: 15px;
+    padding-top: 20px;
+}
+
+#error{
+    margin-top: -10px;
+    color: red;
+    margin-bottom: 15px;
+    display: none;
+}
+
+#error svg{
+    height: 13px;
+    width: 10px;
+    fill: red;
+    margin-top: 3px;
+    transform: rotate(10deg);
+}
