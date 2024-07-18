@@ -13,9 +13,9 @@ fetch('footer.html')
         footer.innerHTML = data;
     })
 
-const aside = document.querySelector("#aside");
-fetch('aside.html')
-    .then(res => res.text())
-    .then(data => {
-        aside.innerHTML = data;
-    });
+// const aside = document.querySelector("#aside");
+// fetch('aside.html')
+//     .then(res => res.text())
+//     .then(data => {
+//         aside.innerHTML = data;
+//     });

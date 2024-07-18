@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/png" sizes="32x32" href="assets/Amazon_icon.png">
-    
+
     <title>Amazon sign-in</title>
     <link rel="stylesheet" href="signin_signup.css">
 </head>
@@ -23,12 +23,17 @@
             <label for="username">Email or mobile phone number</label>
             <input type="text" id="username" name="username" required>
             <span id="error">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 512"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM32 480a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 512">
+                    <path
+                        d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM32 480a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" />
+                </svg>
                 Enter your email or mobile phone number
             </span>
 
-            <button id="continue">Continue</button>
-            <button type="submit" id="submit">Sign in</button>
+            <!-- <button id="continue">Continue</button> -->
+            <button type="submit" id="submit">
+                <a href="index.html">Sign in</a>
+            </button>
 
             <div class="terms-conditions">
                 <span>By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy
