@@ -18,23 +18,21 @@ cart.forEach((cartItem) => {
     })
     .join("");
 
-  const itemPrice =
-    (matchingProduct.price.sale.dollor +
-      matchingProduct.price.sale.cents / 100) *
-    cartItem.quantity;
-  totalPrice += itemPrice;
+  // const itemPrice =
+  //   (matchingProduct.price.sale.dollor +
+  //     matchingProduct.price.sale.cents / 100) *
+  //   cartItem.quantity;
+  // totalPrice += itemPrice;
+
+  console.log(matchingProduct);
 
   cartItemsHTML += `
             <div class="cart-item cart-container-${matchingProduct.id}">
                 <div class="checkbox">
-                    <input type="checkbox" name="" id="item-checkbox-${
-                      matchingProduct.id
-                    }">
+                    <input type="checkbox" name="" id="item-checkbox-${matchingProduct.id}">
                 </div>
                 <div class="cart-item-image">
-                    <img src="assets/product_images/smartphones/${
-                      matchingProduct.image
-                    }" alt="${matchingProduct.image}">
+                    <img src="assets/product_images/smartphones/${matchingProduct.image}" alt="${matchingProduct.image}">
                 </div>
                 <div class="cart-item-details">
                     <div class="cart-item-info">
@@ -42,9 +40,7 @@ cart.forEach((cartItem) => {
                         </h2>
                         <span class="stock">${matchingProduct.stock}</span>
                         <label for="gift-${matchingProduct.id}">
-                            <input type="checkbox" id="gift-${
-                              matchingProduct.id
-                            }" class="gift">
+                            <input type="checkbox" id="gift-${matchingProduct.id}" class="gift">
                             <span> This is a gift</span>
                             <a href="#" id="lern-more">Lern More</a>
                         </label>
@@ -61,17 +57,11 @@ cart.forEach((cartItem) => {
                         <div class="item-qty">
                             <span class="item-quentity">
                                 Qty:
-                                <select name="quantity" id="${
-                                  matchingProduct.id
-                                }-quantity" class="quantity" onchange="updateCartItemQuantity(${
-    matchingProduct.id
-  }, this.value)">
+                                <select name="quantity" id="${matchingProduct.id}-quantity" class="quantity" onchange="updateCartItemQuantity(${matchingProduct.id}, this.value)">
                                     ${options}
                                 </select>
                             </span>
-                            <a href="#" class="delete-item" data-product-id="${
-                              matchingProduct.id
-                            }">Delete</a>
+                            <a href="#" class="delete-item" data-product-id="${matchingProduct.id}">Delete</a>
                             <a href="#" class="save-item">Save for later</a>
                         </div>
                         <a href="#" class="compare">Compare with similar items</a>
@@ -79,7 +69,7 @@ cart.forEach((cartItem) => {
                     </div>
         
                     <div class="cart-item-price">
-                        <span class="item-price">$${itemPrice.toFixed(2)}</span>
+                        <span class="item-price">{itemPrice.toFixed(2)}</span>
                     </div>       
                 </div>
             </div>
